@@ -3,7 +3,7 @@ express = require 'express'
 fs = require 'fs'
 app = express()
 
-app.get '/markers/:marker', (req, res) ->
+app.get '/marker/:marker', (req, res) ->
 
   marker = req.param("marker").replace(/\.png/,'')
   parts = marker.split("-",2)
